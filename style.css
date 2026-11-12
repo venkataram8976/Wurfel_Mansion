@@ -108,14 +108,25 @@ header {
   position: relative;
   display: flex;
   align-items: flex-end;
+  justify-content: flex-start; /* Forces content to align to the left */
   padding-bottom: 14vh;
   background: radial-gradient(circle at 75% 35%, rgba(193, 137, 72, 0.12) 0%, rgba(10, 8, 7, 0.85) 65%, #0a0807 100%),
               linear-gradient(to right, #090706 35%, rgba(10,8,7,0.4) 65%),
               url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2000&auto=format&fit=crop') center right / cover no-repeat;
 }
 
+/* Ensure the hero container stays flush to the left boundary */
+.hero-section .container {
+  margin-left: 0;
+  margin-right: auto;
+  padding-left: 6vw; /* Matches the exact left margin of the header logo */
+}
+
 .hero-content {
   max-width: 580px;
+  text-align: left;
+  margin-left: 0;
+  margin-right: auto;
 }
 
 .hero-title {
