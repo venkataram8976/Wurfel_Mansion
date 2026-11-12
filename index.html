@@ -5,405 +5,332 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Würfel Mansion — Reserve Your Private Experience</title>
   
-  <!-- Google Fonts -->
+  <!-- Fonts & Stylesheet -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;1,300&display=swap" rel="stylesheet">
-  
-  <!-- Stylesheet -->
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- HEADER -->
+  <!-- BRAND HEADER -->
   <header>
-    <div class="brand-logo">
+    <a href="#" class="brand-logo" aria-label="Würfel Mansion Home">
       <h1>Würfel<sup>®</sup></h1>
       <span>MANSION</span>
-    </div>
+    </a>
   </header>
 
-  <!-- MAIN PAGE CONTENT -->
+  <!-- MAIN EXPERIENCE -->
   <main id="mainPageContent">
 
-    <!-- HERO SECTION -->
+    <!-- 1. HERO SECTION -->
     <section class="hero-section">
-      <div class="container">
-        <div class="hero-content">
-          <h2 class="hero-title">YOU ARE INVITED</h2>
-          <p class="hero-subtitle">A SPACE WHERE VISIONARY DESIGN BECOMES AN IMMERSIVE LIFESTYLE.</p>
-          <div class="hero-accent-line"></div>
-        </div>
+      <div class="container hero-content">
+        <h2 class="hero-title">YOU ARE INVITED</h2>
+        <p class="hero-subtitle">A SPACE WHERE VISIONARY DESIGN BECOMES AN IMMERSIVE LIFESTYLE.</p>
+        <div class="hero-accent-line" aria-hidden="true"></div>
       </div>
     </section>
 
-    <!-- SECTION 2: DESTINATION DETAILS & AWARDS -->
+    <!-- 2. DESTINATION & AWARDS -->
     <section class="destination-section">
-      <div class="container">
-        <div class="destination-grid">
+      <div class="container destination-grid">
+        
+        <div class="destination-text">
+          <div class="section-tag"><span aria-hidden="true"></span> A DESTINATION CREATED FOR THOSE WHO APPRECIATE EXCEPTIONAL DESIGN</div>
           
-          <div class="destination-text">
-            <div class="section-tag">
-              <span></span> A DESTINATION CREATED FOR THOSE WHO APPRECIATE EXCEPTIONAL DESIGN
-            </div>
-            
-            <p>
-              Spread across a two-acre private estate, the Würfel Mansion was created for those who believe exceptional design deserves to be truly experienced. For years, discerning homeowners and design enthusiasts have looked for a destination where exceptional kitchens, wardrobes and living spaces could be experienced in a more meaningful way. The mansion was created to bring together world-class design, craftsmanship and inspiration under one roof.
-            </p>
-            <p>
-              Every space has been thoughtfully curated to showcase timeless design, exceptional craftsmanship and innovative thinking. Through a private appointment, you'll have the opportunity to explore remarkable materials, discover thoughtful details and experience design shaped around your lifestyle and aspirations.
-            </p>
+          <p>
+            Spread across a two-acre private estate, the Würfel Mansion was created for those who believe exceptional design deserves to be truly experienced. For years, discerning homeowners and design enthusiasts have looked for a destination where exceptional kitchens, wardrobes and living spaces could be experienced in a more meaningful way. The mansion was created to bring together world-class design, craftsmanship and inspiration under one roof.
+          </p>
+          <p>
+            Every space has been thoughtfully curated to showcase timeless design, exceptional craftsmanship and innovative thinking. Through a private appointment, you'll have the opportunity to explore remarkable materials, discover thoughtful details and experience design shaped around your lifestyle and aspirations.
+          </p>
 
-            <div class="awards-block">
-              <div class="section-tag">
-                <span></span> RECOGNISED AROUND THE WORLD
-              </div>
+          <!-- Awards -->
+          <div class="awards-block">
+            <div class="section-tag"><span aria-hidden="true"></span> RECOGNISED AROUND THE WORLD</div>
+            <div class="awards-list">
+              <article class="award-item">
+                <div class="award-badge-box good-design">GOOD<br>DESIGN</div>
+                <span class="award-label">WINNER OF</span>
+                <span class="award-title">GOOD DESIGN AWARD</span>
+              </article>
 
-              <div class="awards-list">
-                <div class="award-item">
-                  <div class="award-badge-box good-design">
-                    GOOD<br>DESIGN
-                  </div>
-                  <span class="award-label">WINNER OF</span>
-                  <span class="award-title">GOOD DESIGN AWARD</span>
-                </div>
-
-                <div class="award-item">
-                  <div class="award-badge-box dna-paris">
-                    DNA<br>PARIS 2025
-                  </div>
-                  <span class="award-label">WINNER OF</span>
-                  <span class="award-title">DNA PARIS DESIGN AWARDS</span>
-                </div>
-              </div>
+              <article class="award-item">
+                <div class="award-badge-box dna-paris">DNA<br>PARIS 2025</div>
+                <span class="award-label">WINNER OF</span>
+                <span class="award-title">DNA PARIS DESIGN AWARDS</span>
+              </article>
             </div>
           </div>
-
-          <div class="trophy-image-pane">
-            <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=1200&auto=format&fit=crop" alt="The Würfel Mansion Award-winning interior">
-          </div>
-
         </div>
+
+        <figure class="trophy-image-pane">
+          <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=1200&auto=format&fit=crop" 
+               alt="The Würfel Mansion Award-winning Interior" 
+               loading="lazy">
+        </figure>
+
       </div>
     </section>
 
-    <!-- SECTION 3: RESERVATION / APPOINTMENT FORM -->
+    <!-- 3. RESERVATION FORM -->
     <section class="reservation-section" id="bookingFormSection">
       <div class="container">
-        
         <div class="booking-wrapper">
-          <div class="section-tag">
-            <span></span> PREPARING YOUR ARRIVAL
-          </div>
+          
+          <div class="section-tag"><span aria-hidden="true"></span> PREPARING YOUR ARRIVAL</div>
           <h3 class="section-main-heading">RESERVE YOUR PRIVATE EXPERIENCE</h3>
 
-          <form id="appointmentForm">
+          <form id="appointmentForm" novalidate>
             
-            <!-- PERSONAL DETAILS -->
-            <div class="sub-heading-group">PERSONAL DETAILS</div>
-            
-            <div class="form-grid-2">
-              <div class="field-wrap">
-                <label class="field-label" for="fullName">FULL NAME</label>
-                <input type="text" class="lux-input" id="fullName" placeholder="e.g. Dinesh Kumar" required>
-              </div>
-
-              <div class="field-wrap">
-                <label class="field-label" for="mobileNumber">MOBILE NUMBER</label>
-                <input type="tel" class="lux-input" id="mobileNumber" placeholder="+91 8027XX6X67" required>
-              </div>
-            </div>
-
-            <div class="form-grid-2">
-              <div class="field-wrap">
-                <label class="field-label" for="emailAddress">EMAIL ADDRESS</label>
-                <input type="email" class="lux-input" id="emailAddress" placeholder="dinesh@yahoo.com" required>
-              </div>
-
-              <div class="field-wrap">
-                <label class="field-label" for="cityInput">CITY</label>
-                <input type="text" class="lux-input" id="cityInput" placeholder="New Delhi" required>
-              </div>
-            </div>
-
-            <!-- NUMBER OF VISITORS -->
-            <div class="field-wrap dropdown-field-gap">
-              <div class="custom-select-box" id="visitorsSelectBox">
-                <div class="select-header">
-                  <span id="visitorsSelectLabel">NUMBER OF VISITORS</span>
-                  <span class="select-arrow">&#9660;</span>
-                </div>
-                <div class="select-dropdown-list">
-                  <div class="select-option" data-value="1">1</div>
-                  <div class="select-option" data-value="2">2</div>
-                  <div class="select-option" data-value="3">3</div>
-                  <div class="select-option" data-value="4">4</div>
-                  <div class="select-option" data-value="5+">5+</div>
-                </div>
-              </div>
-            </div>
-
-            <!-- APPOINTMENT DATE & TIME -->
-            <div class="section-tag">
-              <span></span> YOUR APPOINTMENT
-            </div>
-            <h3 class="section-main-heading">SELECT A PREFERRED DATE AND TIME</h3>
-
-            <div class="appointment-meta-grid">
+            <!-- Personal Details Fieldset -->
+            <fieldset class="form-fieldset">
+              <legend class="sub-heading-group">PERSONAL DETAILS</legend>
               
-              <!-- August 2026 Interactive Calendar -->
-              <div class="calendar-card">
-                <div class="cal-header-title">PREFERRED DATE</div>
-                <div class="calendar-month-label">AUGUST 2026</div>
-
-                <div class="calendar-days-header">
-                  <div>Su</div><div>Mo</div><div>Tu</div><div>We</div><div>Th</div><div>Fr</div><div>Sa</div>
+              <div class="form-grid-2">
+                <div class="field-wrap">
+                  <label class="field-label" for="fullName">FULL NAME</label>
+                  <input type="text" class="lux-input" id="fullName" placeholder="e.g. Dinesh Kumar" required>
                 </div>
-
-                <div class="calendar-grid-cells" id="calendarGrid">
-                  <!-- August 2026 starts on Saturday (6 empty padding days) -->
-                  <div class="cal-day empty"></div>
-                  <div class="cal-day empty"></div>
-                  <div class="cal-day empty"></div>
-                  <div class="cal-day empty"></div>
-                  <div class="cal-day empty"></div>
-                  <div class="cal-day empty"></div>
-                  <div class="cal-day" data-day="1">1</div>
-
-                  <div class="cal-day" data-day="2">2</div>
-                  <div class="cal-day" data-day="3">3</div>
-                  <div class="cal-day" data-day="4">4</div>
-                  <div class="cal-day" data-day="5">5</div>
-                  <div class="cal-day" data-day="6">6</div>
-                  <div class="cal-day" data-day="7">7</div>
-                  <div class="cal-day" data-day="8">8</div>
-
-                  <div class="cal-day" data-day="9">9</div>
-                  <div class="cal-day" data-day="10">10</div>
-                  <div class="cal-day" data-day="11">11</div>
-                  <div class="cal-day" data-day="12">12</div>
-                  <div class="cal-day" data-day="13">13</div>
-                  <div class="cal-day" data-day="14">14</div>
-                  <div class="cal-day" data-day="15">15</div>
-
-                  <div class="cal-day" data-day="16">16</div>
-                  <div class="cal-day" data-day="17">17</div>
-                  <div class="cal-day" data-day="18">18</div>
-                  <div class="cal-day" data-day="19">19</div>
-                  <div class="cal-day" data-day="20">20</div>
-                  <div class="cal-day" data-day="21">21</div>
-                  <div class="cal-day" data-day="22">22</div>
-
-                  <div class="cal-day" data-day="23">23</div>
-                  <div class="cal-day" data-day="24">24</div>
-                  <div class="cal-day" data-day="25">25</div>
-                  <div class="cal-day" data-day="26">26</div>
-                  <div class="cal-day" data-day="27">27</div>
-                  <div class="cal-day" data-day="28">28</div>
-                  <div class="cal-day" data-day="29">29</div>
-
-                  <div class="cal-day" data-day="30">30</div>
-                  <div class="cal-day" data-day="31">31</div>
+                <div class="field-wrap">
+                  <label class="field-label" for="mobileNumber">MOBILE NUMBER</label>
+                  <input type="tel" class="lux-input" id="mobileNumber" placeholder="+91 8027XX6X67" required>
                 </div>
               </div>
 
-              <!-- Preferred Time Slots -->
-              <div class="time-slot-column">
-                <div class="cal-header-title">PREFERRED TIME</div>
-
-                <div class="time-slots-container">
-                  <div class="slot-pill">
-                    <span class="slot-type-label">THE MORNING EXPERIENCE</span>
-                    <button type="button" class="slot-btn" data-slot="11.00 AM - 2.00 PM">11.00 AM - 2.00 PM</button>
-                  </div>
-
-                  <div class="slot-pill">
-                    <span class="slot-type-label">THE EVENING EXPERIENCE</span>
-                    <button type="button" class="slot-btn" data-slot="4.00 PM - 7.00 PM">4.00 PM - 7.00 PM</button>
-                  </div>
+              <div class="form-grid-2">
+                <div class="field-wrap">
+                  <label class="field-label" for="emailAddress">EMAIL ADDRESS</label>
+                  <input type="email" class="lux-input" id="emailAddress" placeholder="dinesh@yahoo.com" required>
+                </div>
+                <div class="field-wrap">
+                  <label class="field-label" for="cityInput">CITY</label>
+                  <input type="text" class="lux-input" id="cityInput" placeholder="New Delhi" required>
                 </div>
               </div>
 
-            </div>
+              <!-- Number of Visitors -->
+              <div class="field-wrap dropdown-field-gap">
+                <div class="custom-select-box" id="visitorsSelectBox">
+                  <button type="button" class="select-header" aria-expanded="false">
+                    <span id="visitorsSelectLabel">NUMBER OF VISITORS</span>
+                    <span class="select-arrow" aria-hidden="true">&#9660;</span>
+                  </button>
+                  <ul class="select-dropdown-list" role="listbox">
+                    <li class="select-option" data-value="1" role="option">1</li>
+                    <li class="select-option" data-value="2" role="option">2</li>
+                    <li class="select-option" data-value="3" role="option">3</li>
+                    <li class="select-option" data-value="4" role="option">4</li>
+                    <li class="select-option" data-value="5+" role="option">5+</li>
+                  </ul>
+                </div>
+              </div>
+            </fieldset>
 
-            <!-- PREFERENCE DROPDOWNS (2x3 GRID) -->
+            <!-- Appointment Date & Time Fieldset -->
+            <fieldset class="form-fieldset">
+              <div class="section-tag"><span aria-hidden="true"></span> YOUR APPOINTMENT</div>
+              <h3 class="section-main-heading">SELECT A PREFERRED DATE AND TIME</h3>
+
+              <div class="appointment-meta-grid">
+                
+                <!-- Dynamic August 2026 Calendar -->
+                <div class="calendar-card">
+                  <div class="cal-header-title">PREFERRED DATE</div>
+                  <div class="calendar-month-label">AUGUST 2026</div>
+
+                  <div class="calendar-days-header" aria-hidden="true">
+                    <div>Su</div><div>Mo</div><div>Tu</div><div>We</div><div>Th</div><div>Fr</div><div>Sa</div>
+                  </div>
+                  <!-- 31 Days generated dynamically by script.js -->
+                  <div class="calendar-grid-cells" id="calendarGrid" role="grid"></div>
+                </div>
+
+                <!-- Preferred Time Slots -->
+                <div class="time-slot-column">
+                  <div class="cal-header-title">PREFERRED TIME</div>
+                  <div class="time-slots-container">
+                    <div class="slot-pill">
+                      <span class="slot-type-label">THE MORNING EXPERIENCE</span>
+                      <button type="button" class="slot-btn" data-slot="11.00 AM - 2.00 PM">11.00 AM - 2.00 PM</button>
+                    </div>
+                    <div class="slot-pill">
+                      <span class="slot-type-label">THE EVENING EXPERIENCE</span>
+                      <button type="button" class="slot-btn" data-slot="4.00 PM - 7.00 PM">4.00 PM - 7.00 PM</button>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </fieldset>
+
+            <!-- Preferences (2x3 Grid) -->
             <div class="preferences-grid">
               
-              <!-- 1. Preferred Beverages -->
+              <!-- Beverages -->
               <div class="custom-select-box" id="beveragesSelectBox">
-                <div class="select-header">
+                <button type="button" class="select-header" aria-expanded="false">
                   <span id="beveragesLabel">PREFERRED BEVERAGES</span>
-                  <span class="select-arrow">&#9660;</span>
-                </div>
-                <div class="select-dropdown-list">
-                  <div class="select-option" data-value="Coffee">Coffee</div>
-                  <div class="select-option" data-value="Tea">Tea</div>
-                  <div class="select-option" data-value="Fresh Juice">Fresh Juice</div>
-                  <div class="select-option" data-value="Sparkling Water">Sparkling Water</div>
-                  <div class="select-option" data-value="Wine">Wine</div>
-                  <div class="select-option" data-value="Champagne">Champagne</div>
-                </div>
+                  <span class="select-arrow" aria-hidden="true">&#9660;</span>
+                </button>
+                <ul class="select-dropdown-list" role="listbox">
+                  <li class="select-option" data-value="Coffee" role="option">Coffee</li>
+                  <li class="select-option" data-value="Tea" role="option">Tea</li>
+                  <li class="select-option" data-value="Fresh Juice" role="option">Fresh Juice</li>
+                  <li class="select-option" data-value="Sparkling Water" role="option">Sparkling Water</li>
+                  <li class="select-option" data-value="Wine" role="option">Wine</li>
+                  <li class="select-option" data-value="Champagne" role="option">Champagne</li>
+                </ul>
               </div>
 
-              <!-- 2. Food Preference -->
+              <!-- Food Preference -->
               <div class="custom-select-box" id="foodSelectBox">
-                <div class="select-header">
+                <button type="button" class="select-header" aria-expanded="false">
                   <span id="foodLabel">FOOD PREFERENCE</span>
-                  <span class="select-arrow">&#9660;</span>
-                </div>
-                <div class="select-dropdown-list">
-                  <div class="select-option" data-value="Vegetarian">Vegetarian</div>
-                  <div class="select-option" data-value="Non Vegetarian">Non Vegetarian</div>
-                  <div class="select-option" data-value="Vegan">Vegan</div>
-                  <div class="select-option" data-value="Jain">Jain</div>
-                </div>
+                  <span class="select-arrow" aria-hidden="true">&#9660;</span>
+                </button>
+                <ul class="select-dropdown-list" role="listbox">
+                  <li class="select-option" data-value="Vegetarian" role="option">Vegetarian</li>
+                  <li class="select-option" data-value="Non Vegetarian" role="option">Non Vegetarian</li>
+                  <li class="select-option" data-value="Vegan" role="option">Vegan</li>
+                  <li class="select-option" data-value="Jain" role="option">Jain</li>
+                </ul>
               </div>
 
-              <!-- 3. Food Allergies -->
+              <!-- Food Allergies (Conditional) -->
               <div>
                 <div class="custom-select-box" id="allergiesSelectBox">
-                  <div class="select-header">
+                  <button type="button" class="select-header" aria-expanded="false">
                     <span id="allergiesLabel">FOOD ALLERGIES</span>
-                    <span class="select-arrow">&#9660;</span>
-                  </div>
-                  <div class="select-dropdown-list">
-                    <div class="select-option" data-value="Yes">Yes</div>
-                    <div class="select-option" data-value="No">No</div>
-                  </div>
+                    <span class="select-arrow" aria-hidden="true">&#9660;</span>
+                  </button>
+                  <ul class="select-dropdown-list" role="listbox">
+                    <li class="select-option" data-value="Yes" role="option">Yes</li>
+                    <li class="select-option" data-value="No" role="option">No</li>
+                  </ul>
                 </div>
                 <div class="dynamic-input-container" id="allergyDetailsContainer">
                   <input type="text" class="lux-input" id="allergyInput" placeholder="Please Specify Your Food Allergy">
                 </div>
               </div>
 
-              <!-- 4. Children Accompanying -->
+              <!-- Children Accompanying (Conditional) -->
               <div>
                 <div class="custom-select-box" id="childrenSelectBox">
-                  <div class="select-header">
+                  <button type="button" class="select-header" aria-expanded="false">
                     <span id="childrenLabel">CHILDREN ACCOMPANYING</span>
-                    <span class="select-arrow">&#9660;</span>
-                  </div>
-                  <div class="select-dropdown-list">
-                    <div class="select-option" data-value="Yes">Yes</div>
-                    <div class="select-option" data-value="No">No</div>
-                  </div>
+                    <span class="select-arrow" aria-hidden="true">&#9660;</span>
+                  </button>
+                  <ul class="select-dropdown-list" role="listbox">
+                    <li class="select-option" data-value="Yes" role="option">Yes</li>
+                    <li class="select-option" data-value="No" role="option">No</li>
+                  </ul>
                 </div>
                 <div class="dynamic-input-container" id="childrenAgeContainer">
                   <input type="text" class="lux-input" id="childrenAgeInput" placeholder="Age">
                 </div>
               </div>
 
-              <!-- 5. Pets Accompanying -->
+              <!-- Pets Accompanying -->
               <div class="custom-select-box" id="petsSelectBox">
-                <div class="select-header">
+                <button type="button" class="select-header" aria-expanded="false">
                   <span id="petsLabel">PETS ACCOMPANYING</span>
-                  <span class="select-arrow">&#9660;</span>
-                </div>
-                <div class="select-dropdown-list">
-                  <div class="select-option" data-value="Yes">Yes</div>
-                  <div class="select-option" data-value="No">No</div>
-                </div>
+                  <span class="select-arrow" aria-hidden="true">&#9660;</span>
+                </button>
+                <ul class="select-dropdown-list" role="listbox">
+                  <li class="select-option" data-value="Yes" role="option">Yes</li>
+                  <li class="select-option" data-value="No" role="option">No</li>
+                </ul>
               </div>
 
-              <!-- 6. Favourite Music -->
+              <!-- Favourite Music -->
               <div class="custom-select-box" id="musicSelectBox">
-                <div class="select-header">
+                <button type="button" class="select-header" aria-expanded="false">
                   <span id="musicLabel">FAVOURITE MUSIC</span>
-                  <span class="select-arrow">&#9660;</span>
-                </div>
-                <div class="select-dropdown-list">
-                  <div class="select-option" data-value="Jazz">Jazz</div>
-                  <div class="select-option" data-value="Indie">Indie</div>
-                  <div class="select-option" data-value="Lounge">Lounge</div>
-                  <div class="select-option" data-value="Country">Country</div>
-                  <div class="select-option" data-value="R&B">R&B</div>
-                  <div class="select-option" data-value="Classical">Classical</div>
-                  <div class="select-option" data-value="Soul">Soul</div>
-                </div>
+                  <span class="select-arrow" aria-hidden="true">&#9660;</span>
+                </button>
+                <ul class="select-dropdown-list" role="listbox">
+                  <li class="select-option" data-value="Jazz" role="option">Jazz</li>
+                  <li class="select-option" data-value="Indie" role="option">Indie</li>
+                  <li class="select-option" data-value="Lounge" role="option">Lounge</li>
+                  <li class="select-option" data-value="Country" role="option">Country</li>
+                  <li class="select-option" data-value="R&B" role="option">R&B</li>
+                  <li class="select-option" data-value="Classical" role="option">Classical</li>
+                  <li class="select-option" data-value="Soul" role="option">Soul</li>
+                </ul>
               </div>
 
             </div>
 
-            <!-- Submit Appointment -->
+            <!-- Submit -->
             <button type="submit" class="submit-btn-bar">CONFIRM MY APPOINTMENT</button>
-
           </form>
 
         </div>
-
       </div>
     </section>
 
   </main>
 
-  <!-- CONFIRMATION / THANK YOU SCREEN -->
-  <section class="confirmation-view" id="confirmationView">
-    <div class="container">
-      <div class="thankyou-content">
-        <h2 class="thankyou-heading">
-          <span></span>THANK YOU FOR SCHEDULING YOUR VISIT.
-        </h2>
-        <p class="thankyou-lead">Your appointment request has been received.</p>
-        <p class="thankyou-paragraph">
-          Our team will get in touch with you shortly to prepare for your visit better. review your request and send you a confirmation email with your scheduled consultation, based on the next available appointment slot.
-        </p>
-        <p class="thankyou-footer-note">
-          We look forward to welcoming you to the Würfel Mansion.
-        </p>
-
-        <button class="back-btn" id="bookAnotherBtn">Book Another Visit</button>
-      </div>
+  <!-- 4. CONFIRMATION VIEW (Post-submit state) -->
+  <section class="confirmation-view" id="confirmationView" aria-live="polite">
+    <div class="container thankyou-content">
+      <h2 class="thankyou-heading">
+        <span aria-hidden="true"></span>THANK YOU FOR SCHEDULING YOUR VISIT.
+      </h2>
+      <p class="thankyou-lead">Your appointment request has been received.</p>
+      <p class="thankyou-paragraph">
+        Our team will get in touch with you shortly to prepare for your visit better. review your request and send you a confirmation email with your scheduled consultation, based on the next available appointment slot.
+      </p>
+      <p class="thankyou-footer-note">
+        We look forward to welcoming you to the Würfel Mansion.
+      </p>
+      <button type="button" class="back-btn" id="bookAnotherBtn">Book Another Visit</button>
     </div>
   </section>
 
-  <!-- FOOTER -->
+  <!-- 5. SITE FOOTER -->
   <footer>
-    <div class="container">
-      <div class="footer-grid">
-        
-        <div class="footer-location">
-          <h4>THE WÜRFEL MANSION, NEW DELHI</h4>
-          <p>A private experience, by invitation only.</p>
-          <a href="https://www.wurfel.in" target="_blank" rel="noopener">www.wurfel.in</a>
-        </div>
-
-        <div class="footer-links-group">
-          <div class="footer-links-row">
-            <a href="#privacy">Privacy Policy</a>
-            <a href="#terms">Terms</a>
-          </div>
-          <div>© 2026 Würfel Küche</div>
-        </div>
-
-        <!-- Social Icons -->
-        <div class="footer-social-icons">
-          <!-- Facebook -->
-          <a href="#" class="social-icon-btn" aria-label="Facebook">
-            <svg viewBox="0 0 24 24"><path d="M9 8H6v4h3v12h5V12h3.6l.4-4h-4V6.3c0-.9.2-1.3 1.2-1.3H18V0h-3.8C10.6 0 9 1.6 9 4.6V8z"/></svg>
-          </a>
-          <!-- Instagram -->
-          <a href="#" class="social-icon-btn" aria-label="Instagram">
-            <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
-          </a>
-          <!-- LinkedIn -->
-          <a href="#" class="social-icon-btn" aria-label="LinkedIn">
-            <svg viewBox="0 0 24 24"><path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"/></svg>
-          </a>
-          <!-- Pinterest -->
-          <a href="#" class="social-icon-btn" aria-label="Pinterest">
-            <svg viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.372-12 12 0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345-.09.375-.291 1.199-.334 1.357-.057.241-.188.293-.434.177-1.62-.753-2.634-3.12-2.634-5.021 0-4.088 2.971-7.844 8.566-7.844 4.498 0 7.994 3.206 7.994 7.489 0 4.469-2.817 8.064-6.728 8.064-1.314 0-2.549-.688-2.973-1.501l-.809 3.089c-.293 1.127-1.087 2.54-1.619 3.407 1.189.367 2.457.568 3.773.568 6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z"/></svg>
-          </a>
-          <!-- YouTube -->
-          <a href="#" class="social-icon-btn" aria-label="YouTube">
-            <svg viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
-          </a>
-        </div>
-
+    <div class="container footer-grid">
+      
+      <div class="footer-location">
+        <h4>THE WÜRFEL MANSION, NEW DELHI</h4>
+        <p>A private experience, by invitation only.</p>
+        <a href="https://www.wurfel.in" target="_blank" rel="noopener">www.wurfel.in</a>
       </div>
+
+      <div class="footer-links-group">
+        <div class="footer-links-row">
+          <a href="#privacy">Privacy Policy</a>
+          <a href="#terms">Terms</a>
+        </div>
+        <p>© 2026 Würfel Küche</p>
+      </div>
+
+      <!-- Social Links -->
+      <nav class="footer-social-icons" aria-label="Social links">
+        <a href="#" class="social-icon-btn" aria-label="Facebook">
+          <svg viewBox="0 0 24 24"><path d="M9 8H6v4h3v12h5V12h3.6l.4-4h-4V6.3c0-.9.2-1.3 1.2-1.3H18V0h-3.8C10.6 0 9 1.6 9 4.6V8z"/></svg>
+        </a>
+        <a href="#" class="social-icon-btn" aria-label="Instagram">
+          <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+        </a>
+        <a href="#" class="social-icon-btn" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24"><path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"/></svg>
+        </a>
+        <a href="#" class="social-icon-btn" aria-label="Pinterest">
+          <svg viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.372-12 12 0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345-.09.375-.291 1.199-.334 1.357-.057.241-.188.293-.434.177-1.62-.753-2.634-3.12-2.634-5.021 0-4.088 2.971-7.844 8.566-7.844 4.498 0 7.994 3.206 7.994 7.489 0 4.469-2.817 8.064-6.728 8.064-1.314 0-2.549-.688-2.973-1.501l-.809 3.089c-.293 1.127-1.087 2.54-1.619 3.407 1.189.367 2.457.568 3.773.568 6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z"/></svg>
+        </a>
+        <a href="#" class="social-icon-btn" aria-label="YouTube">
+          <svg viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+        </a>
+      </nav>
+
     </div>
   </footer>
 
-  <!-- Script -->
   <script src="script.js"></script>
 </body>
 </html>
