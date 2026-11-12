@@ -101,25 +101,27 @@ header {
 }
 
 /* =====================================================================
-   HERO SECTION
+   HERO SECTION (LEFT-ALIGNED)
 ===================================================================== */
 .hero-section {
   min-height: 100vh;
   position: relative;
   display: flex;
   align-items: flex-end;
-  justify-content: flex-start; /* Forces content to align to the left */
+  justify-content: flex-start;
   padding-bottom: 14vh;
   background: radial-gradient(circle at 75% 35%, rgba(193, 137, 72, 0.12) 0%, rgba(10, 8, 7, 0.85) 65%, #0a0807 100%),
               linear-gradient(to right, #090706 35%, rgba(10,8,7,0.4) 65%),
               url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2000&auto=format&fit=crop') center right / cover no-repeat;
 }
 
-/* Ensure the hero container stays flush to the left boundary */
+/* Overrides the centered 1440px constraint so it hugs the left edge at 6vw */
 .hero-section .container {
-  margin-left: 0;
-  margin-right: auto;
-  padding-left: 6vw; /* Matches the exact left margin of the header logo */
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding-left: 6vw;
+  padding-right: 6vw;
 }
 
 .hero-content {
