@@ -756,6 +756,12 @@ footer {
   transform: translateY(-2px);
 }
 
+fieldset.form-fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
 /* 1. Large Laptops & Desktops (> 1200px) */
 @media (min-width: 1200px) {
   .hero-content {
