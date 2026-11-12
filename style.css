@@ -60,12 +60,13 @@ img {
 .section-tag {
   display: flex;
   align-items: center;
-  font-size: clamp(0.72rem, 1.2vw, 0.85rem);
-  letter-spacing: clamp(2px, 0.3vw, 3.5px);
+  font-size: clamp(0.62rem, 0.95vw, 0.82rem);
+  letter-spacing: clamp(1.5px, 0.2vw, 2.8px);
   text-transform: uppercase;
   color: var(--text-gold);
   font-weight: 400;
   margin-bottom: 12px;
+  white-space: nowrap;
 }
 
 .section-tag span {
