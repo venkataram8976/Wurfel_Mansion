@@ -1,6 +1,3 @@
-/* =====================================================================
-   GLOBAL THEME, FLUID TOKENS & RESETS
-===================================================================== */
 :root {
   --bg-dark: #0a0807;
   --bg-card: rgba(26, 24, 24, 0.85);
@@ -80,9 +77,6 @@ img {
   flex-shrink: 0;
 }
 
-/* =====================================================================
-   HEADER & BRAND LOGO
-===================================================================== */
 header {
   position: absolute;
   top: clamp(24px, 4vw, 44px);
@@ -118,9 +112,6 @@ header {
   color: #cfcac2;
 }
 
-/* =====================================================================
-   HERO SECTION (RESPONSIVE FLUID LEFT-ALIGNMENT)
-===================================================================== */
 .hero-section {
   min-height: 100vh;
   min-height: 100dvh; /* Dynamic viewport height on iOS/Android */
@@ -176,9 +167,6 @@ header {
   margin-top: clamp(18px, 3vh, 28px);
 }
 
-/* =====================================================================
-   DESTINATION DETAILS & AWARDS SECTION
-===================================================================== */
 .destination-section {
   position: relative;
   padding: clamp(60px, 8vw, 110px) 0;
@@ -281,9 +269,6 @@ header {
   filter: contrast(106%) brightness(88%);
 }
 
-/* =====================================================================
-   RESERVATION & BOOKING FORM SECTION
-===================================================================== */
 .reservation-section {
   position: relative;
   padding: clamp(60px, 8vw, 110px) 0 clamp(80px, 10vw, 130px);
@@ -612,9 +597,6 @@ header {
   color: #fff;
 }
 
-/* =====================================================================
-   CONFIRMATION SCREEN
-===================================================================== */
 .confirmation-view {
   display: none;
   min-height: 90vh;
@@ -697,9 +679,7 @@ header {
   color: #fff;
 }
 
-/* =====================================================================
-   FOOTER
-===================================================================== */
+
 footer {
   background: #080706;
   border-top: 1px solid #1c1917;
@@ -775,10 +755,6 @@ footer {
   color: #fff;
   transform: translateY(-2px);
 }
-
-/* =====================================================================
-   MEDIA QUERIES FOR TABLET, LAPTOP, DESKTOP & MOBILE
-===================================================================== */
 
 /* 1. Large Laptops & Desktops (> 1200px) */
 @media (min-width: 1200px) {
@@ -862,7 +838,7 @@ footer {
 
   .cal-day {
     font-size: 0.72rem;
-    min-height: 36px; /* Touch-friendly size */
+    min-height: 36px;
   }
 
   .thankyou-heading {
